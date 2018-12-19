@@ -44,7 +44,7 @@ This project includes:
    ```
  - Run docker image with exposed port 
    ```
-   docker run -p 8084:8084 spring-angular-crud-example
+   docker run -p 9090:9090 spring-angular-crud-example
    ```
 
 ## Contributing
