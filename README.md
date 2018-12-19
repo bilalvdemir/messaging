@@ -1,4 +1,4 @@
-# Spring Boot Cassandra CRUD Example MVC
+# Spring Boot + Angular Messaging Example MVC
 Used simple pojo for showing MongDB CRUD operations and validations
 
 ## Getting Started
@@ -49,7 +49,7 @@ This project includes:
 
 ## Contributing
 
-Please read [CHANGELOG.md](https://github.com/bilalvdemir/cassandra-spring-example/blob/master/CHANGELOG.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CHANGELOG.md](https://github.com/bilalvdemir/messaging/blob/master/CHANGELOG.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
