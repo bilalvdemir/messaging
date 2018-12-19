@@ -8,8 +8,7 @@
 
 **Implementations**
 
- - CassandraDB
- - Cassandra Template
+ - Mongo DB
  - Exceptions
  - Web service
  - dockerize
