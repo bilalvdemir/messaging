@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="login">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/login/loginController.js"></script>
+  <script src="js/login/loginService.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drip</title>
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+</head>
+
+<body class="mainPage body">
+
+  <div class="logindiv" ng-controller="loginController">
+    <div class="logininner">
+      <div class="rowPadding logoDiv">
+        <img src="images/logo.png" class="logo" />
+      </div>
+      <div class="rowPadding">
+        <div class="input-group input-group-sm">
+          <span class="input-group-addon" id="sizing-addon3">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          </span>
+          <input type="text" id="id" ng-model="user.username" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+        </div>
+
+      </div>
+
+      <div class="rowPadding">
+        <div class="input-group input-group-sm">
+          <span class="input-group-addon" id="sizing-addon3">
+            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+          </span>
+          <input type="password" id="password" ng-model="user.password" class="form-control" placeholder="Password" aria-describedby="sizing-addon3">
+        </div>
+
+      </div>
+
+      <button type="button" ng-click="getUser()" class="slide btnWidth rowPadding">LOGIN</button>
+      <p style="color: green">{{message}}</p>
+      <p style="color: red">{{errorMessage}}</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

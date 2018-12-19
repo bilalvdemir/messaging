@@ -1,0 +1,13 @@
+<div class="scroll" id="parent" ng-controller="loginController">
+	<div ng-init="getAllUsers()" class="userTable" id="child"
+		style="line-height: 50px;">
+		<div ng-repeat="user in users" class="divRepeat" ng-click="showUser(user)">
+
+			<img src="images/user.png" class="userIco" />
+			<p class="userName">{{user.username}}</p>
+			<p style="display: none;">{{user.password}}</p>
+
+		</div>
+
+	</div>
+</div>

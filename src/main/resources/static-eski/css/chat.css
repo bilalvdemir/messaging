@@ -1,0 +1,211 @@
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #eae7e7 inset;
+}
+
+body {
+	background-color: #1f3b42 !important;
+	min-width: 100% !important;
+	min-height: 100% !important;
+}
+
+.body {
+	background: url("/images/background.jpg");
+	border: 1px solid white;
+}
+
+
+
+.btn-lg{
+	background-color: rgb(69,83,86);
+	font-weight: bolder;
+	color: white;
+	width:90%;
+	margin: 40px auto 10px;
+}
+
+.btn-lg:hover{
+	background-color: rgb(69,83,86);
+}
+
+.text-danger{
+	color:red;
+	font-size: 11px;
+	font-style: italic;
+	margin-left: 25px;
+	float: left;
+}
+.username{
+	background: #eae7e7 url(../../../audio/user.png) no-repeat;
+	background-position: 0% 25%;
+}
+
+.password{
+	background: #eae7e7 url(../../../audio/pass.png) no-repeat;
+	background-position: 0% 39%;
+}
+
+#inputs{
+	
+	border: 1px solid #c8c8c8;
+	color: #777;
+	font: 13px Helvetica, Arial, sans-serif;
+	margin: 0 auto 30px;
+	padding-left: 40px;
+	width: 90%;
+}
+
+.logo {	
+	min-width: 300px;
+	min-height: 250px;
+	width: 200px;
+  }
+
+.loginPage{
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+	min-height: 415px;
+	vertical-align: middle;
+}
+.lgnForm{
+	 margin: 0 auto;
+	 width: 400px;
+	 border-radius: 0 0 5px 5px;
+     border: 0px solid #c4c6ca;
+     height: 400px;
+     background-color: #F7F7F8;
+     box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.textCenter{
+	text-align: center;
+}
+.LogoHeader{
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	border: 0 solid #c4c6ca;
+	background-color: rgb(69,83,86);
+	margin-bottom: 35px;
+}
+
+.logindiv{
+	text-align: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	border: 1px black ;
+    padding: 0px;
+}
+
+.logrow{
+	margin: auto;
+	border: 3px solid #73AD21;
+}
+
+.logininner {
+	font-family: fantasy;
+	background-color: #F7F7F8;
+    align-items: center;
+    width: 40%;
+    min-height: 300px;
+    margin: auto;
+    border: 3px solid #73AD21;
+    padding: 0px;
+	padding-bottom: 20px;
+	border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c4c6ca;
+    background-color: #F7F7F8;
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div{
+	border: 1px solid white;
+}
+
+
+
+.row {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.leftdiv{
+	
+	color: white;
+	position: fixed;
+	min-height: 95%;
+	width: 25%;
+	text-align: center;
+}
+
+.leftcol{
+	
+	margin-left: 0px;
+    padding-left: 0px;
+}
+
+.btnWidth{
+	width: 90%;
+	margin-bottom: 20px;
+	color: #286090;
+}
+
+.rowPadding{
+	
+	margin: 20px;
+}
+
+.mainPage{
+	height: 100%;
+	width: 100%
+}
+
+.searchBar{
+	width: 98%;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+
+.scroll{
+	height: 89%;
+	overflow-y: auto;
+}
+
+.divRepeat{
+	display: flex;
+	background-color: #FFFFFF;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.divMessage{
+	height: 80px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #F2F2F2;
+	margin: 10px;
+}
+
+.userIco{
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	
+}
+
+
+#parent{
+    height: 100%;
+    width: 98%;
+	overflow: hidden;
+	
+}
+
+#child{
+	line-height: 50px;
+    width: 102%;
+    height: 100%;
+    overflow-y: scroll;
+    margin-left: 10px;
+}

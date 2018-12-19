@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="login">
+
+<head>
+<link rel="stylesheet"
+	href="https://cdn.gitcdn.link/cdn/angular/bower-material/master/angular-material.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js"></script>
+
+<!-- AngularJS Material Javascript using GitCDN to load directly from `bower-material/master` -->
+<script
+	src="https://cdn.gitcdn.link/cdn/angular/bower-material/master/angular-material.js"></script>
+
+<link rel="stylesheet" href="css/login.css">
+<script src="js/login/loginController.js"></script>
+<script src="js/login/loginService.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drip</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+</head>
+
+<body class="mainPage body">
+
+	<div class="logindiv" ng-controller="loginController">
+		<div class="logininner">
+			<div class="rowPadding logoDiv">
+				<img src="images/logo.png" class="logo" />
+				<h1>Sign Up</h1>
+			</div>
+			<div class="rowPadding">
+				<div class="input-group input-group-sm">
+					<span class="input-group-addon" id="sizing-addon3"> <span
+						class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					</span> <input type="text" id="id" ng-model="user.username"
+						class="form-control" placeholder="Username"
+						aria-describedby="sizing-addon3">
+				</div>
+
+			</div>
+
+			<div class="rowPadding">
+				<div class="input-group input-group-sm">
+					<span class="input-group-addon" id="sizing-addon3"> <span
+						class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+					</span> <input type="password" id="password" ng-model="user.password"
+						class="form-control" placeholder="Password"
+						aria-describedby="sizing-addon3">
+				</div>
+
+			</div>
+			<div class="buttonPanel">
+				<button type="button" ng-click="register()"	class="slide btnWidth rowPadding">SING UP</button>
+				<button type="button" ng-click="loginPage()"	class="slide btnWidth rowPadding">LOGIN</button>
+			</div>
+			<p style="color: green">{{message}}</p>
+			<p style="color: red">{{errorMessage}}</p>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

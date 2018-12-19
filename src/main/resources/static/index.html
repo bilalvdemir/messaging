@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="login">
+<head>
+<meta charset="ISO-8859-1">
+<title>User CRUD</title>
+<link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bower-material/master/angular-material.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js"></script>
+
+    <!-- AngularJS Material Javascript using GitCDN to load directly from `bower-material/master` -->
+    <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/master/angular-material.js"></script>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="css/chat.css">
+<script src="js/login/loginController.js"></script>
+<script src="js/login/loginService.js"></script>
+
+<style>
+a {
+	cursor: pointer;
+	background-color: lightblue;
+}
+</style>
+</head>
+<body>
+	<div ng-controller="loginController">
+		<table>
+			<tr>
+				<td width="100">Username:</td>
+				<td><input type="text" id="id" ng-model="user.username" /></td>
+			</tr>
+			<tr>
+				<td width="100">Password:</td>
+				<td><input type="text" id="name" ng-model="user.password" /></td>
+			</tr>
+
+		</table>
+		<br /> <br /> 
+		<a ng-click="getUser(user.id)">Get User</a> 
+		<a ng-click="updateUser(user.id,user.name,user.email)">Update User</a> 
+		<a ng-click="addUser(user.name,user.email)">Add User</a> 
+		<a ng-click="deleteUser(user.id)">Delete User</a> 
+		<br /> <br />
+		<p style="color: green">{{message}}</p>
+		<p style="color: red">{{errorMessage}}</p>
+
+		<br /> <br /> 
+		<a ng-click="getAllUsers()">Get all Users</a>
+		<br /> <br />
+		<br />
+		<div ng-repeat="user in users">{{user.username}} {{user.password}}</div>
+	</div>
+</body>
+</html>

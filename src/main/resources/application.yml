@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: message-service
+  data:
+    mongodb:
+      host:  localhost
+      port: 27017
+      database: kader
+  thymeleaf:
+    check-template-location: true
+    prefix: classpath:/static/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    cache: false
+  resources:
+    cache:
+      period: 0
+  kafka:
+      bootstrap-servers: 10.254.147.180:30307
+      producer:
+          key-serializer: org.apache.kafka.common.serialization.StringSerializer
+          value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      consumer:
+          group-id: iot-bilal-test
+          key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+          value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+          auto-offset-reset: earliest
+          enable-auto-commit: true
+  cloud:
+    inetutils:
+      preferredNetworks:
+        - 217.*      
+kafka:
+  topic:
+    sparkEvent: processedAppData
+    ruleEventTopic: processedAppData
+  bootstrap-servers: 10.254.147.180:30307
+  
+server:
+  port: 9090
