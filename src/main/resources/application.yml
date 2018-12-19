@@ -17,7 +17,7 @@ spring:
     cache:
       period: 0
   kafka:
-      bootstrap-servers: 10.254.147.180:30307
+      bootstrap-servers: localhost:30307
       producer:
           key-serializer: org.apache.kafka.common.serialization.StringSerializer
           value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
@@ -35,7 +35,7 @@ kafka:
   topic:
     sparkEvent: processedAppData
     ruleEventTopic: processedAppData
-  bootstrap-servers: 10.254.147.180:30307
+  bootstrap-servers: localhost:30307
   
 server:
   port: 9090
