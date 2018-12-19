@@ -36,7 +36,7 @@ This project includes:
    
  - Build docker in root directory
    ```
-   docker build -f Dockerfile -t spring-cassandra-crud-example .
+   docker build -f Dockerfile -t spring-angular-crud-example .
    ```
  - Show docker builded images
    ```
@@ -44,7 +44,7 @@ This project includes:
    ```
  - Run docker image with exposed port 
    ```
-   docker run -p 8084:8084 spring-cassandra-crud-example
+   docker run -p 8084:8084 spring-angular-crud-example
    ```
 
 ## Contributing
